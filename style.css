@@ -1,0 +1,35 @@
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+ [v-cloak] {
+   display: none;
+ }
+
+ nav ul{
+   list-style:none;
+   margin: 0;
+   padding: 0;
+   display:flex;
+ }
+
+ nav li{
+   flex: 1 1;
+   height:2rem;
+ }
+
+ nav li a{
+   display:block;
+   text-decoration: none;
+   text-align:center;
+   color: #000000;
+ }
+
+ nav li a:hover{
+   background-color: gray;
+ }
+
+ nav li.active{
+   border-bottom:1px solid powderblue;
+   background-color: burlywood;
+ }

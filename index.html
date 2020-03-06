@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <nav>
+        <ul>
+          <li v-bind:class="{active: currentRoute==='home'}"><a href="#">Home</a></li>
+          <li v-bind:style="baseStyle"><a href="#">Features</a></li>
+          <li><a href="#">Habitats</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Life spans</a></li>
+        </ul>
+      </nav>
+      <h2>Fun facts about Llamas</h2>
+      <a v-bind:title="llamaTitle" v-bind:href="llama">Facts about Llamas</a>
+      <h2>Fun facts about Alpacas</h2>
+      <a v-bind:title="alpacaTitle" v-bind:href="alpaca">Facts about Alpacas</a>
+    </div> 
+    <script src="script.js"></script>
+  </body>
+
+</html>
